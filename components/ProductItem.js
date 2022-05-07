@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 export default function ProductItem({ product, addToCartHandler }) {
     return (
         <Card >
-            <NextLink href={`/product/${product.slug}`} passHref>
+            <NextLink href={`/products/${product.slug}`} passHref>
                 <CardActionArea>
                     <CardMedia component="img" image={product.image} alt={product.name} />
                     <CardContent>

@@ -18,8 +18,9 @@ export default function Register(props) {
         if (password !== password_confirm) {
             enqueueSnackbar("Les mots de passe ne corespont pas", { variant: 'error' });
             return;
-          }
+        }
         await registerUser({ email, password, username })(dispatch, (err, message) => {
+            if (!err) router.push(redirect ?? '/')
             err && enqueueSnackbar(message, { variant: 'error' })
         })
     }

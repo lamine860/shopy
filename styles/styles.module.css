@@ -2,8 +2,8 @@
     background-color: #208070;
 }
 
-.navbr a {
-    color: #f2f2f2;
+.navbar a , .navbar button{
+    color: #f2f2f2!important;
 }
  .ml2 {
     margin-left: 20px;

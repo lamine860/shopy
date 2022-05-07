@@ -16,6 +16,7 @@ export default function Login(props) {
     const submitHandler = async ({ email, password }) => {
         closeSnackbar()
         await loginUser({ email, password })(dispatch, (err, message) => {
+            if (!err) router.push(redirect ?? '/')
             err && enqueueSnackbar(message, { variant: 'error' })
         })
     }

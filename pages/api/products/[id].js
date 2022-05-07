@@ -1,4 +1,3 @@
-import { handleBreakpoints } from "@mui/system";
 import db from "../../../lib/db";
 import Product from "../../../models/product";
 
