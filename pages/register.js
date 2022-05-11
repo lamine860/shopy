@@ -24,7 +24,6 @@ export default function Register(props) {
             err && enqueueSnackbar(message, { variant: 'error' })
         })
     }
-    console.log(user)
     useEffect(() => {
         user && router.push('/')
 

@@ -18,11 +18,11 @@ export default function Shipping(props) {
     }
     useEffect(() => {
         !user && router.push('/login?redirect=shipping')
-        setValue('fullName', shippingAddress.fullName)
-        setValue('address', shippingAddress.address)
-        setValue('country', shippingAddress.country)
-        setValue('city', shippingAddress.city)
-        setValue('postalCode', shippingAddress.postalCode)
+        setValue('fullName', shippingAddress?.fullName)
+        setValue('address', shippingAddress?.address)
+        setValue('country', shippingAddress?.country)
+        setValue('city', shippingAddress?.city)
+        setValue('postalCode', shippingAddress?.postalCode)
 
     }, [])
     return (

@@ -49,9 +49,9 @@ export default function BasicUserMenu({ user, dispatch }) {
                 }}
             >
                 <MenuItem onClick={(e) => loginMenuCloseHandler(e, '/profile')}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Commandes</MenuItem>
+                <MenuItem onClick={(e) => loginMenuCloseHandler(e, '/order-history')}>Commandes</MenuItem>
                 {
-                    user.isAdmin && <MenuItem onClick={handleClose}>Administration</MenuItem>
+                    user.isAdmin && <MenuItem onClick={(e) => loginMenuCloseHandler(e, '/admin/dashboard')}>Administration</MenuItem>
                 }
                 <MenuItem onClick={logoutHandler}>Déconnexion</MenuItem>
             </Menu>
